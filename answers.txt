@@ -1,0 +1,21 @@
+
+1.process_creation.c: 
+This code is used to create new processes and check if its a child ,parent or a failed fork
+#include <unistd.h> The headers areincluded because they contain the declarations for the fork(), getpid(), and pid_t type.
+pid_t pid = fork(); fork returns 0 if its a child process , >0 if its a parent process and -1 if the fork failed
+
+2.file1.c + file2.c: 
+This example shows how we link 2 files using ‘linker’
+file2.c calls the hello() function , which is defined in file1.c . 
+The Linker's job is to connect this call to the function definition when creating the final program.
+
+
+3.simple_program.c: 
+This example is used to show what the ‘loader’ do
+Running ldd on it lists the shared libraries it needs . 
+The Loader is responsible for loading these libraries into memory when the program starts
+
+
+4-Loader is responsible for starting programs,It takes the executable file from the hard disk, places it into the main memory, initializes the registers, and tells the CPU to begin executing the instructions.
+
+5-Linker runs during the compilation process. Its main job is to combine independent object files (.o) and libraries into a single executable file. It performs Symbol Resolution (connecting function calls to their definitions) and Relocation (assigning memory addresses to code sections).
