@@ -2,7 +2,7 @@
 
 This project provides the solution and necessary files for Assignment 2, focusing on foundational C development concepts within an operating systems context. This includes process creation using `fork()`, understanding the roles of the linker and loader, and automating compilation with a Makefile.
 
-## 📂 Project Contents
+## Project Contents
 
 The repository is structured as follows:
 
@@ -13,7 +13,7 @@ The repository is structured as follows:
 * `LICENSE`: The MIT License file for this project.
 * `/screenshots`: Contains visual proof of compilation, execution, and the output of the `ldd` command for shared library analysis.
 
-## 🚀 How to Compile and Run Programs
+## How to Compile and Run Programs
 
 All build and execution tasks are managed via the provided `Makefile`. Execute all commands from the root directory of the project.
 
@@ -51,7 +51,7 @@ Use the `clean` target in the Makefile to remove all generated executable binari
 make clean
 ```
 
-## ⚖️ License
+## License
 
 This project is licensed under the MIT License.
 
